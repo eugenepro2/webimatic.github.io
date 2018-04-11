@@ -44,11 +44,13 @@
           display: block
           position: absolute
           top: -21px
+          transform: translateX(-100%)
           opacity: 0
           +tr
         &:hover
           opacity: 1
           &:before
+            transform: translateX(0%)
             opacity: 1
   &__social
     float: right
