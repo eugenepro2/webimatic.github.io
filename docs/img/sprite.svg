@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-facebook" viewBox="0 0 10 20">
+    <path d="M10 .144v3.173H8.183c-.664 0-1.111.145-1.343.433s-.347.721-.347 1.298V7.32h3.391l-.451 3.557h-2.94V20H2.951v-9.123H0V7.32h2.951V4.7c0-1.49.402-2.647 1.204-3.468C4.958.411 6.026 0 7.361 0 8.495 0 9.375.048 10 .144z"/>
+</symbol><symbol id="icon-lang" viewBox="0 0 10 7">
+    <title>
+        ic-keyboard-arrow-down-24px
+    </title>
+    <path d="M1.175.004L5 4.202 8.825.004 10 1.296l-5 5.5-5-5.5z" fill-rule="nonzero" opacity=".6"/>
+</symbol><symbol id="icon-mail" viewBox="0 0 17 13">
+    <path d="M15.3 0H1.7C.765 0 .008.731.008 1.625L0 11.375C0 12.269.765 13 1.7 13h13.6c.935 0 1.7-.731 1.7-1.625v-9.75C17 .731 16.235 0 15.3 0zm0 3.25L8.5 7.312 1.7 3.25V1.625l6.8 4.063 6.8-4.063z"/>
+</symbol><symbol id="icon-telegram" viewBox="0 0 21 17">
+    <path d="M20.69 1.56l-3.093 14.376c-.233 1.014-.842 1.267-1.707.789l-4.713-3.423-2.274 2.156c-.252.248-.462.455-.947.455l.338-4.73 8.736-7.778c.38-.334-.083-.52-.59-.185l-10.8 6.7L.991 8.486c-1.011-.31-1.03-.996.21-1.474L19.387.108c.842-.31 1.58.185 1.305 1.452z"/>
+</symbol></svg>

@@ -1,0 +1,38 @@
+body
+  font-family: 'Roboto'
+
+.container
+  height: 100%
+  width: 100%
+  max-width: 1170px
+.row
+  height: 100%
+
+
+
+.btn
+  border-radius: 6px
+  background-color: $primary
+  box-shadow: 0 8px 16px 0 rgba(255, 175, 37, 0.32)
+  text-decoration: none
+  color: $white
+  font-size: 16px
+  font-weight: 900
+  letter-spacing: 0.8
+  width: 270px
+  height: 65px
+  text-transform: uppercase
+  font-family: 'Museo Sans'
+  position: relative
+  transform: translateX(-50%)
+  left: 50%
+  +center
+  +tr
+  &-primary
+    &:hover
+      box-shadow: none
+      background-color: #f0a554
+  &:disabled
+    background-color: $gray-02
+    color: #cccccc
+
