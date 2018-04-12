@@ -9,10 +9,15 @@
   font-style: normal;
 }
 
-$icon-facebook: "\EA01";
-$icon-lang: "\EA02";
-$icon-mail: "\EA03";
-$icon-telegram: "\EA04";
+$icon-3: "\EA01";
+$icon-facebook: "\EA02";
+$icon-file: "\EA03";
+$icon-form-textarea: "\EA04";
+$icon-form-user: "\EA05";
+$icon-lang: "\EA06";
+$icon-link: "\EA07";
+$icon-mail: "\EA08";
+$icon-telegram: "\EA09";
 
 
 %icon {
@@ -31,7 +36,12 @@ $icon-telegram: "\EA04";
   display: inline-block;
 }
 
+.icon-3:before { content: $icon-3; }
 .icon-facebook:before { content: $icon-facebook; }
+.icon-file:before { content: $icon-file; }
+.icon-form-textarea:before { content: $icon-form-textarea; }
+.icon-form-user:before { content: $icon-form-user; }
 .icon-lang:before { content: $icon-lang; }
+.icon-link:before { content: $icon-link; }
 .icon-mail:before { content: $icon-mail; }
 .icon-telegram:before { content: $icon-telegram; }

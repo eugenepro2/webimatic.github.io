@@ -1,0 +1,36 @@
+section.form
+  .container
+    .row
+      .col-md-6
+        h2 Остались вопросы?
+        p Свяжитесь с нами по указанным контактам ниже<br> или задайте свой вопрос в форме обратной связи!
+        .form__social
+          a(href="mailto:webimaticinvest@gmail.com")
+            i.icon.icon-mail 
+            | webimaticinvest@gmail.com
+          a(href="tg://resolve?domain=@webimaticinvest")
+            i.icon.icon-telegram 
+            | @webimaticinvest
+          a(href="https://www.facebook.com/webimaticinvest")
+            i.icon.icon-facebook 
+            | facebook.com/webimaticinvest
+      .col-md-6
+        form
+          h2 Оставьте заявку
+          p Наш специалист свяжется с Вами <br>в ближайшее время!
+          .user.input
+            input(type="text" required placeholder="Ваше имя")
+          .email.input
+            input(type="email" required placeholder="Email адрес")
+          .textarea.input
+            textarea(placeholder="Опишите ваш проект")
+          .file
+            i.icon.icon-file
+            p Прекрепить резюме
+            input(type="file")
+          input.btn.btn-primary(type="submit" value="Отправить заявку")
+          .checkbox
+            input#checkbox(type="checkbox" required)
+            label.label(for="checkbox")
+            label.label-for(for="checkbox") Я принимаю 
+              a(href="#") условия пользовательского соглашения

@@ -1,0 +1,51 @@
+.capabilities
+  padding: 300px 0 100px
+  position: relative
+  &:before
+    content: ''
+    background-image: url('../img/capabilities/bg-circle.svg')
+    width: 700px
+    height: 700px
+    +cover
+    display: block
+    position: absolute
+    top: 50%
+    transform: translate(-57%, -50%)
+  h2
+    margin-bottom: 70px
+    span
+      color: $primary
+  &__block
+    background-color: $white
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.12)
+    position: relative
+    z-index: 10
+    &__image
+      height: 230px
+      overflow: hidden
+      +cover
+    &__content
+      padding: 25px
+      h3
+        font-size: 20px
+        font-family: 'Museo Sans'
+        line-height: 1.4
+        color: $secondary
+        margin-bottom: 15px
+      ul
+        padding-left: 20px
+        li
+          font-size: 14px
+          line-height: 1.65
+          margin-bottom: 20px
+          position: relative
+          &:before
+            content: ''
+            width: 12px
+            height: 12px
+            background: $primary
+            border-radius: 50%
+            display: block
+            position: absolute
+            top: 5px
+            left: -20px

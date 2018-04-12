@@ -1,0 +1,39 @@
+.form
+  background-image: url('../img/background/bg-05.jpg')
+  +cover
+  padding: 100px 0
+  h2, p
+    color: $white
+  h2
+    margin-bottom: 15px
+  &__social
+    margin-top: 50px
+    a
+      text-decoration: none
+      display: flex
+      align-items: center
+      color: rgba($white, 0.85)
+      margin-bottom: 25px
+      +tr
+      i
+        +center
+        background: $white
+        width: 55px
+        height: 55px
+        border-radius: 50%
+        color: $primary
+        margin-right: 15px
+      &:hover
+        text-decoration: underline
+        color: $white
+  form
+    background-color: $white
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.12)
+    text-align: center
+    padding: 35px 50px
+    margin-top: -170px
+    h2
+      color: $secondary
+      margin-bottom: 10px
+    p
+      color: $body-text
