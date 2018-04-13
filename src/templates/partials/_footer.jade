@@ -25,3 +25,29 @@ footer.footer
 							i.icon.icon-telegram
 						a(href="#")
 							i.icon.icon-facebook
+
+a.top(href="#")
+	img(src="img/top.svg", alt="")
+
+
+#form.modal(style="display: none")
+	form
+		h2 Оставьте заявку
+		p Наш специалист свяжется с Вами в ближайшее время!
+		.flex
+			.user.input
+				input(type="text" required placeholder="Ваше имя")
+			.email.input
+				input(type="email" required placeholder="Email адрес")
+		.textarea.input
+			textarea(placeholder="Опишите ваш проект")
+		.file
+			i.icon.icon-file
+			p Прекрепить резюме
+			input(type="file")
+		input.btn.btn-primary(type="submit" value="Отправить заявку")
+		.checkbox
+			input#checkbox(type="checkbox" required)
+			label.label(for="checkbox")
+			label.label-for(for="checkbox") Я принимаю 
+				a(href="#") условия пользовательского соглашения

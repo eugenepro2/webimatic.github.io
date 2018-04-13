@@ -1,0 +1,126 @@
+.look
+  background-image: url('../img/background/bg-03.jpg')
+  +cover
+  padding-top: 100px
+  position: relative
+  padding-bottom: 350px
+  h2, h3, p, ul
+    color: $white
+  h2
+    margin-bottom: 15px
+    span
+      color: $primary
+  p
+    font-size: 20px
+    margin-bottom: 70px
+  &__table
+    border-radius: 8px
+    background-color: rgba(22, 28, 40, 0.7)
+    display: flex
+    flex-wrap: wrap
+    overflow: hidden
+    &__block
+      width: 33.3333333%
+      box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.12)
+      header
+        background-color: $secondary
+        height: 70px
+        text-transform: uppercase
+        letter-spacing: 0.5
+        font-family: 'Museo Sans'
+        font-size: 20px
+        padding-left: 25px
+        padding-top: 28px
+        box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.12)
+      &__content
+        padding-top: 40px
+        &__col
+          border-bottom: dashed 1px rgba($white, 0.15)
+          padding-top: 30px
+          &:nth-of-type(1)
+            height: 110px
+            padding-top: 0
+          &:nth-of-type(2)
+            height: 225px
+          &:nth-of-type(3)
+            height: 180px
+      &--first
+        ul
+          padding-left: 65px
+          margin-left: 25px
+          li
+            font-size: 16px
+            opacity: 0.9
+            color: $white
+            position: relative
+            margin-bottom: 45px
+            width: 90%
+            &:before
+              content: ''
+              background: url('../img/plus.svg')
+              width: 40px
+              height: 40px
+              display: block
+              position: absolute
+              left: -65px
+      &--second, &--third
+        ul
+          padding-left: 30px
+          margin-left: 25px
+          li
+            font-size: 16px
+            line-height: 1.44
+            color: rgba(255, 255, 255, 0.75)
+            margin-bottom: 10px
+            position: relative
+            &:before
+              content: ''
+              width: 12px
+              height: 12px
+              border-radius: 50%
+              background: $error
+              display: block
+              position: absolute
+              left: -30px
+              top: 4px
+      &--third
+        box-shadow: none
+        header
+          box-shadow: none
+        ul li
+          width: 90%
+          &:before
+            background: $success
+  &__form
+    width: 830px
+    height: 450px
+    background-color: $white
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.12)
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -225px
+    +center
+    flex-direction: column
+    z-index: 100
+    img
+      position: absolute
+      width: 110px
+      height: 110px
+      top: -55px
+      left: 50%
+      transform: translateX(-50%)
+    h2
+      color: $secondary
+      text-align: center
+      margin-bottom: 30px
+    p 
+      color: $secondary
+      text-align: center
+      margin-bottom: 40px
+      a
+        color: $primary
+        text-decoration: none
+    .btn
+      left: 0
+      transform: translateX(0)
