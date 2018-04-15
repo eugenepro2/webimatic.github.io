@@ -1,0 +1,17 @@
+---
+title: Новость
+bodyClass: bodynews
+---
+extends layouts/_layout
+block content
+	section.news
+		.container
+			.row
+				.col-xs-12
+					a.back(href="#") 
+						i.icon.icon-prev
+						| Вернуться назад
+				.col-md-8
+					include news/article
+				.col-md-4
+					include partials/_aside

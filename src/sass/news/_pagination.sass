@@ -1,0 +1,41 @@
+.pagination
+  display: flex
+  align-items: center
+  margin-top: 20px
+  a.link
+    font-weight: 500
+    font-size: 16px
+    color: $secondary
+    font-family: 'Museo Sans'
+    text-decoration: none
+    width: 30px
+    height: 30px
+    +center
+    margin: 0 4px
+    border-radius: 50%
+    +tr
+    &.active
+      border: 1px solid $primary
+    &:hover
+      background: $primary
+      color: $white
+  span
+    height: 30px
+    margin-bottom: 0
+  .prev, .next
+    font-weight: 500
+    color: $secondary
+    display: flex
+    align-items: center
+    cursor: pointer
+    display: inline-block
+    i
+      margin: 0 7px
+      font-size: 10px
+    &:hover
+      color: $primary
+  .prev
+    margin-right: 15px
+  .next
+    margin-left: 15px
+  

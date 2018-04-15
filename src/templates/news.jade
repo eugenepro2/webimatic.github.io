@@ -1,0 +1,15 @@
+---
+title: Новости и мероприятия
+bodyClass: bodynews
+---
+extends layouts/_layout
+block content
+  section.news
+    .container
+      .row
+        .col-xs-12
+          h1 Новости фонда
+        .col-md-8
+          include news/content
+        .col-md-4
+          include partials/_aside
