@@ -11,16 +11,17 @@
 
 $icon-3: "\EA01";
 $icon-clock: "\EA02";
-$icon-facebook: "\EA03";
-$icon-file: "\EA04";
-$icon-form-textarea: "\EA05";
-$icon-form-user: "\EA06";
-$icon-lang: "\EA07";
-$icon-link: "\EA08";
-$icon-mail: "\EA09";
-$icon-next: "\EA0A";
-$icon-prev: "\EA0B";
-$icon-telegram: "\EA0C";
+$icon-close: "\EA03";
+$icon-facebook: "\EA04";
+$icon-file: "\EA05";
+$icon-form-textarea: "\EA06";
+$icon-form-user: "\EA07";
+$icon-lang: "\EA08";
+$icon-link: "\EA09";
+$icon-mail: "\EA0A";
+$icon-next: "\EA0B";
+$icon-prev: "\EA0C";
+$icon-telegram: "\EA0D";
 
 
 %icon {
@@ -41,6 +42,7 @@ $icon-telegram: "\EA0C";
 
 .icon-3:before { content: $icon-3; }
 .icon-clock:before { content: $icon-clock; }
+.icon-close:before { content: $icon-close; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-file:before { content: $icon-file; }
 .icon-form-textarea:before { content: $icon-form-textarea; }

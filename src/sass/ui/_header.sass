@@ -1,12 +1,22 @@
 .header
   position: absolute
   width: 100%
+  &.fixed
+    position: fixed
+    z-index: 100
+    .header
+      &__top
+        background: rgba($secondary, 0.9)
+      &__bottom
+        display: none
+  .logo__black
+    display: none
   &__top
     background: $secondary
     height: 60px
     margin-bottom: 15px
   &__lang
-    position: absolute
+    float: right
     display: flex
     height: 60px
     background-color: rgba(255, 255, 255, 0.04)
@@ -25,15 +35,19 @@
       color: rgba($white, 0.6)
       font-size: 7px
   nav
+    height: 60px
     ul
+      height: 100%
       display: flex
       justify-content: space-between
+      align-items: center
       a
         color: $white
         opacity: 0.7
+        height: 100%
         text-decoration: none
         position: relative
-        display: inline-block
+        display: block
         font-size: 16px
         +tr
         &:before
@@ -44,14 +58,12 @@
           display: block
           position: absolute
           top: -21px
-          transform: translateX(-100%)
-          opacity: 0
+          width: 0px
           +tr
         &:hover
           opacity: 1
           &:before
-            transform: translateX(0%)
-            opacity: 1
+            width: 100%
   &__contact
     float: right
     text-align: right
@@ -69,6 +81,7 @@
       i
         color: $primary
         +s('mail-2')
+        
 .bodynews
   .header
     position: relative

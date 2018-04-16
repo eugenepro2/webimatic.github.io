@@ -1,10 +1,6 @@
 //BEGIN header
 header.header
   .header__top
-    .header__lang
-      img(src="img/flags/ru.png", alt="")
-      p Ru
-      i.icon.icon-lang
     .container
       .row.middle-xs
         .col-md-9
@@ -13,38 +9,43 @@ header.header
               li
                 a(href="index.html") Главная
               li
-                a(href="#") Проекты
+                a(href="#portfolio") Проекты
               li
-                a(href="#") Кого мы ищем?
+                a(href="#look") Кого мы ищем?
               li
-                a(href="#") Возможности
+                a(href="#capabilities") Возможности
               li
-                a(href="#") Партнеры
+                a(href="#partners") Партнеры
               li
                 a(href="news.html") Новости и мероприятия
               li
                 a(href="contact.html") Контакты
         .col-md-3
-          .social
-            a(href="#")
-              i.icon.icon-mail
-            a(href="#")
-              i.icon.icon-telegram
-            a(href="#")
-              i.icon.icon-facebook
-  .container
-    .row.middle-xs
-      .col-md-6
-        a.logo(href="#")
-          img.logo__white(src="img/logo/white.svg", alt="")
-          img.logo__black(src="img/logo/black.svg", alt="")
-          .logo__text
-            h2 Webimatic Invest
-            p Фонд правильных инвестиций
-      .col-md-6
-        .header__contact
-          p Консультация по вопросам:
-          a(href="mailto:webimaticinvest@gmail.ru")
-            img(src="img/mail-2.svg", alt="")
-            | webimaticinvest@gmail.ru
+          //- .social
+          //-   a(href="#")
+          //-     i.icon.icon-mail
+          //-   a(href="#")
+          //-     i.icon.icon-telegram
+          //-   a(href="#")
+          //-     i.icon.icon-facebook
+          .header__lang
+            img(src="img/flags/ru.png", alt="")
+            p Ru
+            i.icon.icon-lang
+  .header__bottom
+    .container
+      .row.middle-xs
+        .col-md-6.col-sm-6
+          a.logo(href="#")
+            img.logo__white(src="img/logo/white.svg", alt="")
+            img.logo__black(src="img/logo/black.svg", alt="")
+            .logo__text
+              h2 Webimatic Invest
+              p Фонд правильных инвестиций
+        .col-md-6.col-sm-6
+          .header__contact
+            p Консультация по вопросам:
+            a(href="mailto:webimaticinvest@gmail.ru")
+              img(src="img/mail-2.svg", alt="")
+              | webimaticinvest@gmail.ru
 //END header
