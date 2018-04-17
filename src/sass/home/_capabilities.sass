@@ -1,6 +1,8 @@
 .capabilities
   padding: 300px 0 100px
   position: relative
+  +r($mobile)
+    padding: 40px 0
   &:before
     content: ''
     background-image: url('../img/capabilities/bg-circle.svg')
@@ -13,6 +15,8 @@
     transform: translate(-57%, -50%)
   h2
     margin-bottom: 70px
+    +r($mobile)
+      margin-bottom: 30px
     span
       color: $primary
   &__block
@@ -20,18 +24,41 @@
     box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.12)
     position: relative
     z-index: 10
+    +r($tablet)
+      display: flex
+      height: 100%
+    +r($mobile)
+      flex-direction: column
+    &__margin
+      +r($tablet)
+        margin-bottom: 25px
     &__image
       height: 230px
       overflow: hidden
-      +cover
+      +r($tablet)
+        width: 50%
+        height: 100%
+        +cover
+      +r($mobile)
+        width: 100%
+        height: 230px
     &__content
       padding: 25px
+      +r($tablet)
+        width: 50%
+        display: flex
+        justify-content: center
+        flex-direction: column
+      +r($mobile)
+        width: 100%
       h3
         font-size: 20px
         font-family: 'Museo Sans'
         line-height: 1.4
         color: $secondary
         margin-bottom: 15px
+        +r($tablet)
+          text-align: left
       ul
         padding-left: 20px
         li
@@ -49,3 +76,6 @@
             position: absolute
             top: 5px
             left: -20px
+          &:last-child
+            +r($tablet)
+              margin-bottom: 0

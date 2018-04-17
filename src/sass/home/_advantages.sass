@@ -2,10 +2,21 @@
   background-image: url('../img/background/bg-02.jpg')
   padding: 100px 0
   +cover
+  +r($tablet)
+    padding-top: 50px
+    padding-bottom: 80px
+  +r($mobile)
+    padding-top: 30px
+    padding-bottom: 0px
   h2
     display: flex
     align-items: center
     margin-bottom: 115px
+    +r($tablet)
+      font-size: 40px
+    +r($mobile)
+      font-size: 32px
+      margin-bottom: 60px
     i 
       color: $primary
       font-size: 
@@ -20,6 +31,10 @@
     display: flex
     align-items: flex-end
     justify-content: center
+    +r($tablet)
+      align-items: flex-start
+    +r($mobile)
+      margin-bottom: 80px
     img
       position: absolute
       top: -55px
@@ -32,3 +47,7 @@
       font-weight: 500
       line-height: 1.4
       font-family: 'Museo Sans'
+      +r($tablet)
+        font-size: 16px
+        margin-top: 75px
+        margin-bottom: 0

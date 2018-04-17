@@ -1,6 +1,7 @@
 .header
   position: absolute
   width: 100%
+  z-index: 10
   &.fixed
     position: fixed
     z-index: 100
@@ -25,6 +26,9 @@
     top: 0
     width: 110px
     cursor: pointer
+    +r($mobile)
+      position: absolute
+      right: 0
     img
       width: 22px
       height: 18px
@@ -36,6 +40,8 @@
       font-size: 7px
   nav
     height: 60px
+    +r($tablet)
+      display: none
     ul
       height: 100%
       display: flex
@@ -81,7 +87,7 @@
       i
         color: $primary
         +s('mail-2')
-        
+
 .bodynews
   .header
     position: relative
@@ -91,9 +97,9 @@
     .logo
       h2, p
         color: $secondary
-      &__white
+      &__white, &__white__mob
         display: none
-      &__black
+      &__black, &__white__block
         display: block
     &__contact
       a, p

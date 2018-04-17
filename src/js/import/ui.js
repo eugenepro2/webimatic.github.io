@@ -1,5 +1,7 @@
 import jqueryModal from 'jquery-modal';
+import device from 'current-device';
 
+//Модальные онка
 $('a[rel]').click(function(event) {
   $(this).modal({
     fadeDuration: 250,
@@ -10,7 +12,7 @@ $('a[rel]').click(function(event) {
 });
 
  
-
+//Плавный скролл
 $('nav').on('click','a', function(event) {
   var id = $(this).attr('href');
 
@@ -23,3 +25,11 @@ $('nav').on('click','a', function(event) {
   $('body,html').animate({scrollTop: top}, 1500);
 });
 
+//Viewport
+if(device.mobile()) {
+  $('#viewport').attr('content', 'width=375, minimum-scale=0.3, maximum-scale=3, user-scalable=yes, target-densitydpi=device-dpi');
+} else if(device.tablet()) {
+  $('#viewport').attr('content', 'width=768, minimum-scale=0.3, maximum-scale=3, user-scalable=yes, target-densitydpi=device-dpi');
+} else if(device.desktop()) {
+  $('#viewport').attr('content', 'width=1200, minimum-scale=0.3, maximum-scale=3, user-scalable=yes, target-densitydpi=device-dpi');
+}

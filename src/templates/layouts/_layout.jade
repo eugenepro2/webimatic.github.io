@@ -9,7 +9,26 @@ html
     .out(class=outClass)
       block header
         include ../partials/_header
-      .wrapper
+      #menu
+        .close-menu
+          i.icon.icon-close-menu
+          span Закрыть
+        ul
+          li
+            a(href="index.html") Главная
+          li
+            a.active(href="#portfolio") Проекты
+          li
+            a(href="#look") Кого мы ищем?
+          li
+            a(href="#capabilities") Возможности
+          li
+            a(href="#partners") Партнеры
+          li
+            a(href="news.html") Новости и мероприятия
+          li
+            a(href="contact.html") Контакты
+      .wrapper#panel.panel
         block content
       include ../partials/_footer
     //END out

@@ -6,6 +6,16 @@ html
 	text-rendering: optimizelegibility
 	-moz-osx-font-smoothing: grayscale
 
++rmin($mobile)
+	.hidden-xs
+		display: none !important
++rmin(768)
+	.hidden-sm
+		display: none !important
++rmin($tablet)
+	.hidden-md
+		display: none !important
+
 
 .flex
 	display: flex	
@@ -15,8 +25,12 @@ body
 
 .container
 	height: 100%
-	width: 100%
+	width: 100% !important
+	padding: 0 15px
 	max-width: 1170px
+	box-sizing: border-box
+	+r(1024)
+		width: 100% !important
 .row
 	height: 100%
 
@@ -26,18 +40,8 @@ body
 	color: $white
 	align-items: center
 	img
-		width: 55px
-	&__text
-		margin-left: 10px
-		h2
-			font-size: 27px
-			font-weight: 900
-			font-family: 'Museo Sans'
-			color: $white
-		p
-			color: rgba($white, 0.7)
-			margin-bottom: 0
-
+		width: 300px
+		
 .social
 	float: right
 	+center
@@ -101,6 +105,8 @@ h2
 	color: $secondary
 	line-height: 1.33
 	font-family: 'Museo Sans'
+	+r($mobile)
+		font-size: 32px
 
 p
 	font-family: Roboto
@@ -210,7 +216,7 @@ form
 
 
 
-
+//Всплывающее окно
 .blocker
 	z-index: 1000
 	#form
@@ -235,6 +241,7 @@ form
 			+tr
 			&:hover
 				color: $primary
+//Кнопка вврехчц
 .top
 	position: fixed
 	display: block
@@ -246,7 +253,7 @@ form
 	img
 		width: 100%
 
-
+//Footer прижат к низу
 html, body
   height: 100%
 

@@ -10,7 +10,7 @@ main.news__content
               i.icon.icon-clock
               | 11.02.2018 | 15:10
             h2 Россияне распродают оборудование для добычи криптовалют
-    .col-md-6
+    .col-md-6.col-sm-6.col-xs-12
       article.news__content__block
         header
           img(src="img/news/1.jpg", alt="")
@@ -22,7 +22,7 @@ main.news__content
         a(href="article.html")
           i.icon.icon-link
           | Читать подробнее
-    .col-md-6
+    .col-md-6.col-sm-6.col-xs-12
       article.news__content__block
         header
           img(src="img/news/1.jpg", alt="")
@@ -34,7 +34,7 @@ main.news__content
         a(href="article.html")
           i.icon.icon-link
           | Читать подробнее
-    .col-md-6
+    .col-md-6.col-sm-6.col-xs-12
       article.news__content__block
         header
           img(src="img/news/1.jpg", alt="")
@@ -46,7 +46,7 @@ main.news__content
         a(href="article.html")
           i.icon.icon-link
           | Читать подробнее
-    .col-md-6
+    .col-md-6.col-sm-6.col-xs-12
       article.news__content__block
         header
           img(src="img/news/1.jpg", alt="")
@@ -58,7 +58,7 @@ main.news__content
         a(href="article.html")
           i.icon.icon-link
           | Читать подробнее
-  .pagination
+  .pagination.hidden-xs
     a(href="#").prev 
       i.icon.icon-prev
       | Назад
@@ -68,6 +68,18 @@ main.news__content
     a.link(href="#") 4
     a.link(href="#") 5
     a.link(href="#") 6
+    span ...
+    a(href="#").next 
+      | Далее
+      i.icon.icon-next
+  .pagination.hidden-sm.hidden-md
+    a(href="#").prev 
+      i.icon.icon-prev
+      | Назад
+    a.link.active(href="#") 1
+    a.link(href="#") 2
+    a.link(href="#") 3
+    a.link(href="#") 4
     span ...
     a(href="#").next 
       | Далее

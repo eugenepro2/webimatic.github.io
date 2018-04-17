@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Новости и мероприятия</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
@@ -19,7 +19,8 @@
         <div class="header__top">
           <div class="container">
             <div class="row middle-xs">
-              <div class="col-md-9">
+              <div class="col-md-9 col-sm-9 col-xs-6">
+                <div class="open-menu"><i class="icon icon-open"></i><span>Меню</span></div>
                 <nav>
                   <ul>
                     <li><a href="index.html">Главная</a></li>
@@ -32,7 +33,7 @@
                   </ul>
                 </nav>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-3 col-xs-6">
                 <div class="header__lang"><img src="img/flags/ru.png" alt="">
                   <p>Ru</p><i class="icon icon-lang"></i></div>
               </div>
@@ -42,25 +43,38 @@
         <div class="header__bottom">
           <div class="container">
             <div class="row middle-xs">
-              <div class="col-md-6 col-sm-6"><a href="#" class="logo"><img src="img/logo/white.svg" alt="" class="logo__white"><img src="img/logo/black.svg" alt="" class="logo__black"><div class="logo__text"><h2>Webimatic Invest</h2><p>Фонд правильных инвестиций</p></div></a></div>
+              <div class="col-md-6 col-sm-6 col-xs-3"><a href="#" class="logo hidden-xs"><img src="img/logo/white.svg" alt="" class="logo__white"><img src="img/logo/black.svg" alt="" class="logo__black"></a><a href="#" class="logo hidden-sm hidden-md"><img src="img/logo/white_mob.svg" alt="" class="logo__white"><img src="img/logo/black_mob.svg" alt="" class="logo__black"></a></div>
               <div
-                class="col-md-6 col-sm-6">
-                <div class="header__contact">
+                class="col-md-6 col-sm-6 col-xs-9">
+                <div class="header__contact hidden-xs">
                   <p>Консультация по вопросам:</p><a href="mailto:webimaticinvest@gmail.ru"><img src="img/mail-2.svg" alt="">webimaticinvest@gmail.ru</a></div>
+                <div class="social hidden-md hidden-sm"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>
             </div>
           </div>
         </div>
     </div>
     </header>
     <!--END header-->
-    <div class="wrapper">
+    <div id="menu">
+      <div class="close-menu"><i class="icon icon-close-menu"></i><span>Закрыть</span></div>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#portfolio" class="active">Проекты</a></li>
+        <li><a href="#look">Кого мы ищем?</a></li>
+        <li><a href="#capabilities">Возможности</a></li>
+        <li><a href="#partners">Партнеры</a></li>
+        <li><a href="news.html">Новости и мероприятия</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div id="panel" class="wrapper panel">
       <section class="news">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <h1>Новости фонда</h1>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-xs-12">
               <main class="news__content">
                 <div class="row">
                   <div class="col-xs-12">
@@ -73,28 +87,28 @@
                       </a>
                     </article>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
                     <article class="news__content__block">
                       <header><img src="img/news/1.jpg" alt=""></header>
                       <section><span> <i class="icon icon-clock"></i>11.02.2018 | 15:10</span>
                         <h2>Майнер для Android всего за пару дней заразил тысячи устройств</h2>
                       </section><a href="article.html"><i class="icon icon-link"></i>Читать подробнее</a></article>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
                     <article class="news__content__block">
                       <header><img src="img/news/1.jpg" alt=""></header>
                       <section><span> <i class="icon icon-clock"></i>11.02.2018 | 15:10</span>
                         <h2>Майнер для Android всего за пару дней заразил тысячи устройств</h2>
                       </section><a href="article.html"><i class="icon icon-link"></i>Читать подробнее</a></article>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
                     <article class="news__content__block">
                       <header><img src="img/news/1.jpg" alt=""></header>
                       <section><span> <i class="icon icon-clock"></i>11.02.2018 | 15:10</span>
                         <h2>Майнер для Android всего за пару дней заразил тысячи устройств</h2>
                       </section><a href="article.html"><i class="icon icon-link"></i>Читать подробнее</a></article>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
                     <article class="news__content__block">
                       <header><img src="img/news/1.jpg" alt=""></header>
                       <section><span> <i class="icon icon-clock"></i>11.02.2018 | 15:10</span>
@@ -102,14 +116,16 @@
                       </section><a href="article.html"><i class="icon icon-link"></i>Читать подробнее</a></article>
                   </div>
                 </div>
-                <div class="pagination"><a href="#" class="prev"> <i class="icon icon-prev"></i>Назад</a><a href="#" class="link active">1</a><a href="#" class="link">2</a><a href="#" class="link">3</a><a href="#" class="link">4</a><a href="#" class="link">5</a><a href="#" class="link">6</a><span>...</span>
+                <div class="pagination hidden-xs"><a href="#" class="prev"> <i class="icon icon-prev"></i>Назад</a><a href="#" class="link active">1</a><a href="#" class="link">2</a><a href="#" class="link">3</a><a href="#" class="link">4</a><a href="#" class="link">5</a><a href="#" class="link">6</a><span>...</span>
                   <a
                     href="#" class="next">
                     Далее<i class="icon icon-next"></i></a>
                 </div>
+                <div class="pagination hidden-sm hidden-md"><a href="#" class="prev"> <i class="icon icon-prev"></i>Назад</a><a href="#" class="link active">1</a><a href="#" class="link">2</a><a href="#" class="link">3</a><a href="#" class="link">4</a><span>...</span><a href="#" class="next"> 
+Далее<i class="icon icon-next"></i></a></div>
               </main>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-12">
               <aside class="aside">
                 <div class="aside__fund">
                   <h3>Мероприятия фонда</h3>
@@ -182,9 +198,9 @@
       </div>
       <div class="footer__bottom">
         <div class="container">
-          <div class="row middle-xs">
+          <div class="row middle-xs center-xs start-sm">
             <div class="col-md-4"><a href="#" class="logo"><img src="img/logo/white.svg" alt=""><div class="logo__text"><h2>Webimatic Invest</h2><p>Фонд правильных инвестиций</p></div></a></div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-10">
               <p>©️ Webimatic Invest | Все права защищены 2017-2018 г.</p><a href="#" class="politika">Политика конфиденциальности</a></div>
             <div class="col-md-4">
               <div class="social"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>

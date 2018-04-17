@@ -1,4 +1,6 @@
-import './import/form.js';
-import './import/top.js';
-import './import/header.js';
-import './import/ui.js';
+import './import/form';
+import './import/top';
+import './import/header';
+import './import/ui';
+import './import/slideout';
+import './import/slider';

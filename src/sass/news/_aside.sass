@@ -10,12 +10,21 @@
     text-transform: uppercase
     font-size: 20px
     font-family: 'Museo Sans'
+    width: 100%
   a
     text-decoration: none
   &__fund
     background-color: $white
     box-shadow: 0 0 24px 0 rgba(37, 40, 74, 0.04)
     margin-bottom: 30px
+    +r($tablet)
+      display: flex
+      flex-wrap: wrap
+      a
+        width: 50%
+    +r($mobile)
+      a
+        width: 100%
     article
       padding: 22px 15px
       display: flex
@@ -26,11 +35,16 @@
         width: 37%
         height: 90px
         overflow: hidden
+        +r($mobile)
+          height: 65px
+          width: 28%
         img
           height: 100%
       section
         width: 63%
         padding-left: 15px
+        +r($mobile)
+          width: 72%
         span
           color: rgba(22, 28, 40, 0.4)
           i
@@ -40,11 +54,23 @@
           font-weight: 600
           font-family: 'Museo Sans'
           color: $secondary
+          +r($mobile)
+            font-weight: 500
     &__button
       padding: 33.5px 45px
+      +r($tablet)
+        width: 100%
+        padding: 15px 25px
+        a
+          left: 0
+          transform: translateX(0)
+          width: 240px
+        
   &__form
     background-color: $white
     box-shadow: 0 0 24px 0 rgba(37, 40, 74, 0.04)
+    +r($tablet)
+      display: none
     form
       padding: 15px 30px 27px 30px
       input

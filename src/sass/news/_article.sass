@@ -1,7 +1,11 @@
 .news__content__article
   article
+    +r($tablet)
+      width: 100%
     img
       margin-bottom: 30px
+      +r($tablet)
+        width: 100%
     span
       color: rgba(0, 0, 0, 0.3)
     h1
@@ -9,6 +13,9 @@
       font-size: 36px
       line-height: normal
       margin-bottom: 25px
+      +r($mobile)
+        font-size: 24px
+        font-weight: 600
     hr
       border: none
       border-top: 1px solid rgba(0, 0, 0, 0.12)

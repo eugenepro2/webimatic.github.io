@@ -3,7 +3,10 @@ header.header
   .header__top
     .container
       .row.middle-xs
-        .col-md-9
+        .col-md-9.col-sm-9.col-xs-6
+          .open-menu
+            i.icon.icon-open
+            span Меню
           nav
             ul
               li
@@ -20,7 +23,7 @@ header.header
                 a(href="news.html") Новости и мероприятия
               li
                 a(href="contact.html") Контакты
-        .col-md-3
+        .col-md-3.col-sm-3.col-xs-6
           //- .social
           //-   a(href="#")
           //-     i.icon.icon-mail
@@ -35,17 +38,24 @@ header.header
   .header__bottom
     .container
       .row.middle-xs
-        .col-md-6.col-sm-6
-          a.logo(href="#")
+        .col-md-6.col-sm-6.col-xs-3
+          a.logo(href="#").hidden-xs
             img.logo__white(src="img/logo/white.svg", alt="")
             img.logo__black(src="img/logo/black.svg", alt="")
-            .logo__text
-              h2 Webimatic Invest
-              p Фонд правильных инвестиций
-        .col-md-6.col-sm-6
-          .header__contact
+          a.logo(href="#").hidden-sm.hidden-md
+            img.logo__white(src="img/logo/white_mob.svg", alt="")
+            img.logo__black(src="img/logo/black_mob.svg", alt="")
+        .col-md-6.col-sm-6.col-xs-9
+          .header__contact.hidden-xs
             p Консультация по вопросам:
             a(href="mailto:webimaticinvest@gmail.ru")
               img(src="img/mail-2.svg", alt="")
               | webimaticinvest@gmail.ru
+          .social.hidden-md.hidden-sm
+            a(href="#")
+              i.icon.icon-mail
+            a(href="#")
+              i.icon.icon-telegram
+            a(href="#")
+              i.icon.icon-facebook
 //END header

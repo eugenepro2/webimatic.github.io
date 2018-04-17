@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Контакты</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
@@ -19,7 +19,8 @@
         <div class="header__top">
           <div class="container">
             <div class="row middle-xs">
-              <div class="col-md-9">
+              <div class="col-md-9 col-sm-9 col-xs-6">
+                <div class="open-menu"><i class="icon icon-open"></i><span>Меню</span></div>
                 <nav>
                   <ul>
                     <li><a href="index.html">Главная</a></li>
@@ -32,7 +33,7 @@
                   </ul>
                 </nav>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-3 col-xs-6">
                 <div class="header__lang"><img src="img/flags/ru.png" alt="">
                   <p>Ru</p><i class="icon icon-lang"></i></div>
               </div>
@@ -42,23 +43,36 @@
         <div class="header__bottom">
           <div class="container">
             <div class="row middle-xs">
-              <div class="col-md-6 col-sm-6"><a href="#" class="logo"><img src="img/logo/white.svg" alt="" class="logo__white"><img src="img/logo/black.svg" alt="" class="logo__black"><div class="logo__text"><h2>Webimatic Invest</h2><p>Фонд правильных инвестиций</p></div></a></div>
+              <div class="col-md-6 col-sm-6 col-xs-3"><a href="#" class="logo hidden-xs"><img src="img/logo/white.svg" alt="" class="logo__white"><img src="img/logo/black.svg" alt="" class="logo__black"></a><a href="#" class="logo hidden-sm hidden-md"><img src="img/logo/white_mob.svg" alt="" class="logo__white"><img src="img/logo/black_mob.svg" alt="" class="logo__black"></a></div>
               <div
-                class="col-md-6 col-sm-6">
-                <div class="header__contact">
+                class="col-md-6 col-sm-6 col-xs-9">
+                <div class="header__contact hidden-xs">
                   <p>Консультация по вопросам:</p><a href="mailto:webimaticinvest@gmail.ru"><img src="img/mail-2.svg" alt="">webimaticinvest@gmail.ru</a></div>
+                <div class="social hidden-md hidden-sm"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>
             </div>
           </div>
         </div>
     </div>
     </header>
     <!--END header-->
-    <div class="wrapper">
+    <div id="menu">
+      <div class="close-menu"><i class="icon icon-close-menu"></i><span>Закрыть</span></div>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#portfolio" class="active">Проекты</a></li>
+        <li><a href="#look">Кого мы ищем?</a></li>
+        <li><a href="#capabilities">Возможности</a></li>
+        <li><a href="#partners">Партнеры</a></li>
+        <li><a href="news.html">Новости и мероприятия</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div id="panel" class="wrapper panel">
       <section class="contact">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <h1>Контакты</h1>
+            <div class="col-md-6 col-xs-12 first-md">
+              <h1 class="hidden-sm">Контакты</h1>
               <div class="form__social"><a href="mailto:webimaticinvest@gmail.com"><i class="icon icon-mail"> </i><span>webimaticinvest@gmail.com</span></a><a href="tg://resolve?domain=@webimaticinvest"><i class="icon icon-telegram"> </i><span>@webimaticinvest</span></a><a href="https://www.facebook.com/webimaticinvest"><i class="icon icon-facebook"> </i><span>facebook.com/webimaticinvest</span></a></div>
               <div
                 class="contact__info">
@@ -67,7 +81,8 @@
                 <p>ИНН 5260449541 / ОГРН 5260449541</p>
             </div>
           </div>
-          <div class="col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2213.1614930435403!2d43.99077731595219!3d56.309785980706025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d5ae4737ca7d%3A0xfc949c2f763df1cd!2z0YPQuy4g0JrQvtGA0L7Qu9C10L3QutC-LCAyOSwgMjEyLCDQndC40LbQvdC40Lkg0J3QvtCy0LPQvtGA0L7QtCwg0J3QuNC20LXQs9C-0YDQvtC00YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCA2MDMwMDA!5e0!3m2!1sru!2sua!4v1523807590808"
+          <div class="col-md-6 col-xs-12 first-sm">
+            <h1 class="hidden-md hidden-xs">Контакты</h1><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2213.1614930435403!2d43.99077731595219!3d56.309785980706025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d5ae4737ca7d%3A0xfc949c2f763df1cd!2z0YPQuy4g0JrQvtGA0L7Qu9C10L3QutC-LCAyOSwgMjEyLCDQndC40LbQvdC40Lkg0J3QvtCy0LPQvtGA0L7QtCwg0J3QuNC20LXQs9C-0YDQvtC00YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCA2MDMwMDA!5e0!3m2!1sru!2sua!4v1523807590808"
               width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
         </div>
     </div>
@@ -85,9 +100,9 @@
       </div>
       <div class="footer__bottom">
         <div class="container">
-          <div class="row middle-xs">
+          <div class="row middle-xs center-xs start-sm">
             <div class="col-md-4"><a href="#" class="logo"><img src="img/logo/white.svg" alt=""><div class="logo__text"><h2>Webimatic Invest</h2><p>Фонд правильных инвестиций</p></div></a></div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-10">
               <p>©️ Webimatic Invest | Все права защищены 2017-2018 г.</p><a href="#" class="politika">Политика конфиденциальности</a></div>
             <div class="col-md-4">
               <div class="social"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>

@@ -1,7 +1,11 @@
 .partners
   padding: 100px 0
+  +r($mobile)
+    padding: 40px 0
   h2
     margin-bottom: 55px
+    +r($mobile)
+      margin-bottom: 30px
   &__row
     display: flex
     flex-wrap: wrap
@@ -11,11 +15,17 @@
       display: flex
       justify-content: center
       margin-bottom: 40px
+      +r(1024)
+        width: 33%
+      +r($mobile)
+        width: 50%
       img
         height: 50px
         filter: grayscale(1)
         cursor: pointer
         opacity: 0.4
+        +r($mobile)
+          height: 30px
         +tr
         &:hover
           filter: grayscale(0)

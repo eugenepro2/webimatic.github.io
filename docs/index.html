@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Главная страница</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
@@ -19,7 +19,8 @@
         <div class="header__top">
           <div class="container">
             <div class="row middle-xs">
-              <div class="col-md-9">
+              <div class="col-md-9 col-sm-9 col-xs-6">
+                <div class="open-menu"><i class="icon icon-open"></i><span>Меню</span></div>
                 <nav>
                   <ul>
                     <li><a href="index.html">Главная</a></li>
@@ -32,7 +33,7 @@
                   </ul>
                 </nav>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 col-sm-3 col-xs-6">
                 <div class="header__lang"><img src="img/flags/ru.png" alt="">
                   <p>Ru</p><i class="icon icon-lang"></i></div>
               </div>
@@ -42,18 +43,31 @@
         <div class="header__bottom">
           <div class="container">
             <div class="row middle-xs">
-              <div class="col-md-6 col-sm-6"><a href="#" class="logo"><img src="img/logo/white.svg" alt="" class="logo__white"><img src="img/logo/black.svg" alt="" class="logo__black"><div class="logo__text"><h2>Webimatic Invest</h2><p>Фонд правильных инвестиций</p></div></a></div>
+              <div class="col-md-6 col-sm-6 col-xs-3"><a href="#" class="logo hidden-xs"><img src="img/logo/white.svg" alt="" class="logo__white"><img src="img/logo/black.svg" alt="" class="logo__black"></a><a href="#" class="logo hidden-sm hidden-md"><img src="img/logo/white_mob.svg" alt="" class="logo__white"><img src="img/logo/black_mob.svg" alt="" class="logo__black"></a></div>
               <div
-                class="col-md-6 col-sm-6">
-                <div class="header__contact">
+                class="col-md-6 col-sm-6 col-xs-9">
+                <div class="header__contact hidden-xs">
                   <p>Консультация по вопросам:</p><a href="mailto:webimaticinvest@gmail.ru"><img src="img/mail-2.svg" alt="">webimaticinvest@gmail.ru</a></div>
+                <div class="social hidden-md hidden-sm"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>
             </div>
           </div>
         </div>
     </div>
     </header>
     <!--END header-->
-    <div class="wrapper">
+    <div id="menu">
+      <div class="close-menu"><i class="icon icon-close-menu"></i><span>Закрыть</span></div>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#portfolio" class="active">Проекты</a></li>
+        <li><a href="#look">Кого мы ищем?</a></li>
+        <li><a href="#capabilities">Возможности</a></li>
+        <li><a href="#partners">Партнеры</a></li>
+        <li><a href="news.html">Новости и мероприятия</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div id="panel" class="wrapper panel">
       <section class="intro">
         <div class="container">
           <div class="row middle-xs center-xs">
@@ -66,13 +80,13 @@
       <section class="about">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12 col-xs-12 first-md">
               <h2>О фонде</h2>
               <p><b>Webimatic Invest</b> – частный фонд, основанный IT предпринимателями из Санкт-Петербурга и Нижнего Новгорода. Мы предлагаем проектам наш накопленный опыт, возможности и связи. Фонд нацелен на инвестиции в проекты на стадии seed и pre-seed.</p>
               <p>Ищем технологические проекты начиная с ранних стадий, помогаем создать не просто инвестиционно-привлекательный проект, а самостоятельный, быстрорастущий бизнес. </p>
               <p>Наши приоритетные направления для инвестирования - SaaS, marketplace, enterprise решения, CPA, lead generation, коммерческие контент-проекты.</p>
               <p>Но, если у Вас есть что нам предложить – обязательно рассмотрим все предложения!</p><a href="#form" rel="modal:open" class="btn btn-normal">Оставить заявку</a></div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12 col-xs-12 first-sm first-xs">
               <div class="about__image"><img src="img/about.jpg" alt=""></div>
             </div>
           </div>
@@ -82,19 +96,20 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h2><i class="icon icon-3"></i>Наших главных<br> преимущества</h2>
+              <h2 class="hidden-sm hidden-md"><i class="icon icon-3"></i>Наши преимущества</h2>
+              <h2 class="hidden-xs"><i class="icon icon-3"></i>Наших главных<br> преимущества</h2>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-12">
               <div class="advantages__block"><img src="img/advantages/1.svg" alt="">
                 <h3>Быстрые деньги на старт <br>бизнес проекта</h3>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-12">
               <div class="advantages__block"><img src="img/advantages/2.svg" alt="">
                 <h3>Сильная экспертиза <br>в интернет-маркетенге</h3>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-12">
               <div class="advantages__block"><img src="img/advantages/3.svg" alt="">
                 <h3>Выгодные инвестиции, <br>на развитие вашего бизнеса</h3>
               </div>
@@ -108,7 +123,7 @@
             <div class="col-xs-12 center-xs">
               <h2>Портфель фонда</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12 col-xs-12 portfolio__block__margin">
               <div class="portfolio__block">
                 <div class="portfolio__block__image"><img src="img/portfolio/1.jpg" alt=""></div>
                 <div class="portfolio__block__content">
@@ -118,7 +133,7 @@
                   </div><a href="#"> <i class="icon icon-link"></i>Перейти на сайт</a></div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12 col-xs-12 portfolio__block__margin">
               <div class="portfolio__block">
                 <div class="portfolio__block__image"><img src="img/portfolio/2.jpg" alt=""></div>
                 <div class="portfolio__block__content">
@@ -213,6 +228,8 @@
         <div class="look__form"><img src="img/look-form.svg" alt="">
           <h2>Начните сотрудничество<br> с нами прямо сейчас!</h2>
           <p>Мы рады каждому проекту. Ждем от Вас краткого описания проекта на почту <a href="mailto:webimaticinvest@gmail.com">webimaticinvest@gmail.com</a> или через форму подачи заявки</p><a href="#form" rel="modal:open" class="btn btn-primary">Оставить заявку</a></div>
+        <a
+          href="#" class="btn btn-primary">Начать сотрудничество</a>
       </section>
       <section id="capabilities" class="capabilities">
         <div class="container">
@@ -220,7 +237,7 @@
             <div class="col-xs-12 center-xs">
               <h2>Наши <span>возможности</span></h2>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4 col-sm-12 col-xs-12 capabilities__block__margin">
               <div class="capabilities__block">
                 <div style="background-image: url('img/capabilities/1.png')" class="capabilities__block__image"></div>
                 <div class="capabilities__block__content">
@@ -232,7 +249,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4 col-sm-12 col-xs-12 capabilities__block__margin">
               <div class="capabilities__block">
                 <div style="background-image: url('img/capabilities/2.png')" class="capabilities__block__image"></div>
                 <div class="capabilities__block__content">
@@ -245,7 +262,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4 col-sm-12 col-xs-12 capabilities__block__margin">
               <div class="capabilities__block">
                 <div style="background-image: url('img/capabilities/3.png')" class="capabilities__block__image"></div>
                 <div class="capabilities__block__content">
@@ -268,7 +285,7 @@
             <div class="col-xs-12 center-xs">
               <h2>Наша <span>команда</span></h2>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 hidden-sm hidden-xs">
               <div class="team__block">
                 <div class="team__block__image"><img src="img/team/1.jpg" alt=""></div>
                 <div class="team__block__content">
@@ -278,7 +295,7 @@
                 <div class="team__block__social"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 hidden-sm hidden-xs">
               <div class="team__block">
                 <div class="team__block__image"><img src="img/team/2.jpg" alt=""></div>
                 <div class="team__block__content">
@@ -288,7 +305,7 @@
                 <div class="team__block__social"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 hidden-sm hidden-xs">
               <div class="team__block">
                 <div class="team__block__image"><img src="img/team/3.jpg" alt=""></div>
                 <div class="team__block__content">
@@ -296,6 +313,43 @@
                   <p>Повседневная практика показывает, что укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия.</p>
                 </div>
                 <div class="team__block__social"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="swiper-container team-slider hidden-md">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="team__block">
+                      <div class="team__block__image"><img src="img/team/1.jpg" alt=""></div>
+                      <div class="team__block__content">
+                        <h3>Имя и Фамилия</h3><span>Должность в фонде</span>
+                        <p>Повседневная практика показывает, что укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия.</p>
+                      </div>
+                      <div class="team__block__social"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team__block">
+                      <div class="team__block__image"><img src="img/team/2.jpg" alt=""></div>
+                      <div class="team__block__content">
+                        <h3>Имя и Фамилия</h3><span>Должность в фонде</span>
+                        <p>Повседневная практика показывает, что укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия.</p>
+                      </div>
+                      <div class="team__block__social"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team__block">
+                      <div class="team__block__image"><img src="img/team/3.jpg" alt=""></div>
+                      <div class="team__block__content">
+                        <h3>Имя и Фамилия</h3><span>Должность в фонде</span>
+                        <p>Повседневная практика показывает, что укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия.</p>
+                      </div>
+                      <div class="team__block__social"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -323,12 +377,12 @@
       <section class="form">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
               <h2>Остались вопросы?</h2>
               <p>Свяжитесь с нами по указанным контактам ниже<br> или задайте свой вопрос в форме обратной связи!</p>
-              <div class="form__social"><a href="mailto:webimaticinvest@gmail.com"><i class="icon icon-mail"> </i>webimaticinvest@gmail.com</a><a href="tg://resolve?domain=@webimaticinvest"><i class="icon icon-telegram"> </i>@webimaticinvest</a><a href="https://www.facebook.com/webimaticinvest"><i class="icon icon-facebook"> </i>facebook.com/webimaticinvest</a></div>
+              <div class="form__social"><a href="mailto:webimaticinvest@gmail.com"><i class="icon icon-mail"> </i><span>webimaticinvest@gmail.com</span></a><a href="tg://resolve?domain=@webimaticinvest"><i class="icon icon-telegram"> </i><span>@webimaticinvest</span></a><a href="https://www.facebook.com/webimaticinvest"><i class="icon icon-facebook"> </i><span>facebook.com/webimaticinvest</span></a></div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
               <form>
                 <h2>Оставьте заявку</h2>
                 <p>Наш специалист свяжется с Вами <br>в ближайшее время!</p>
@@ -356,9 +410,9 @@
       </div>
       <div class="footer__bottom">
         <div class="container">
-          <div class="row middle-xs">
+          <div class="row middle-xs center-xs start-sm">
             <div class="col-md-4"><a href="#" class="logo"><img src="img/logo/white.svg" alt=""><div class="logo__text"><h2>Webimatic Invest</h2><p>Фонд правильных инвестиций</p></div></a></div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-10">
               <p>©️ Webimatic Invest | Все права защищены 2017-2018 г.</p><a href="#" class="politika">Политика конфиденциальности</a></div>
             <div class="col-md-4">
               <div class="social"><a href="#"><i class="icon icon-mail"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>

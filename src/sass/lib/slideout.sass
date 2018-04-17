@@ -1,0 +1,84 @@
+#menu
+  position: fixed
+  top: 0
+  bottom: 0
+  width: 280px
+  min-height: 100vh
+  overflow-y: scroll
+  -webkit-overflow-scrolling: touch
+  z-index: 1000
+  background-color: #141a25
+  transform: translateX(-280px)
+  color: $white
+  +tr
+  &.is-open
+    transform: translateX(0px)
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.32)
+  .close-menu
+    height: 60px
+    display: flex
+    align-items: center
+    padding-left: 15px
+    background-color: #20293c
+    i
+      font-size: 17px
+    span
+      text-transform: uppercase
+      font-size: 14px
+      letter-spacing: 0.4px
+      margin-left: 10px
+  ul
+    a
+      display: flex
+      height: 60px
+      color: rgba($white, 0.7)
+      text-decoration: none
+      display: flex
+      align-items: center
+      padding-left: 15px
+      box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.12)
+      &.active, &:active
+        background-color: $primary
+        font-weight: 600
+        position: relative
+        &:before
+          content: $icon-next
+          @extend %icon
+          position: absolute
+          top: 0
+          right: 0
+          width: 50px
+          height: 100%
+          background: $white
+          font-size: 20px
+          +center
+          color: #000000
+          font-weight: normal
+
+  
+
+.open-menu
+  display: none
+  +r($tablet)
+    display: flex
+    align-content: center
+    color: $white
+    cursor: pointer
+    span
+      font-size: 14px
+      font-family: 'Museo Sans'
+      text-transform: uppercase
+      letter-spacing: 0.4px
+      margin-left: 10px
+
+.panel
+  &.is-open
+    &:before
+      background-color: rgba(22, 28, 40, 0.7)
+      content: ''
+      width: 100%
+      height: 100%
+      position: fixed
+      top: 0
+      z-index: 100
+      +tr
