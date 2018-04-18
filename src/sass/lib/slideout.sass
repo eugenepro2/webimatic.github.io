@@ -42,6 +42,7 @@
         background-color: $primary
         font-weight: 600
         position: relative
+        color: $white
         &:before
           content: $icon-next
           @extend %icon
@@ -55,6 +56,9 @@
           +center
           color: #000000
           font-weight: normal
+    li:last-child
+      a
+        box-shadow: none
 
   
 

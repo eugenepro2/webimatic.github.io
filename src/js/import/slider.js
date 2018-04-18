@@ -33,5 +33,5 @@ let lookSlider = new Swiper('.look-slider', {
     type: 'bullets',
     clickable: true
   },
-  autoHeight: true
+  autoHeight: true,
 });
