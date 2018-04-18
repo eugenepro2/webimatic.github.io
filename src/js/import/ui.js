@@ -13,7 +13,7 @@ $('a[rel]').click(function(event) {
 
  
 //Плавный скролл
-$('nav').on('click','a', function(event) {
+$('nav, #menu').on('click','a', function(event) {
   var id = $(this).attr('href');
 
   if (id.indexOf('html') + 1) {
@@ -22,7 +22,7 @@ $('nav').on('click','a', function(event) {
   }
   
   var top = $(id).offset().top;
-  $('body,html').animate({scrollTop: top}, 1500);
+  $('body,html').animate({scrollTop: top-60}, 1500);
 });
 
 //Viewport
