@@ -6,15 +6,16 @@ html
 	text-rendering: optimizelegibility
 	-moz-osx-font-smoothing: grayscale
 
-+rmin($mobile)
++r($mobile)
 	.hidden-xs
 		display: none !important
-+rmin(768)
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px)
 	.hidden-sm
 		display: none !important
 +rmin($tablet)
 	.hidden-md
 		display: none !important
+		
 
 
 .flex
@@ -159,18 +160,26 @@ form
 		position: relative
 		display: flex
 		margin-bottom: 10px
+		cursor: pointer
 		input
 			opacity: 0
 			position: absolute
 			width: 100%
 			height: 100%
+			cursor: pointer
+			z-index: 100
 		i
 			font-size: 24px
 			color: $primary
 			margin-right: 5px
+			cursor: pointer
 		p
 			color: #577abe !important
 			opacity: 0.7
+			cursor: pointer
+		&:hover
+			p 
+				text-decoration: underline
 	.btn
 		width: 100%
 		margin-bottom: 25px
@@ -226,6 +235,7 @@ form
 		max-width: 650px
 		text-align: center
 		padding-bottom: 30px
+		padding: 32px 48px
 		.input
 			width: 100%
 		.user
@@ -243,11 +253,16 @@ form
 			color: $gray-01
 			+tr
 			&:hover
-				color: $primary
+				color: $error
+		.btn
+			font-size: 18px
+		h3
+			font-size: 40px
+			line-height: 1.15
 		+r($mobile)
 			.flex
 				flex-direction: column
-			h2
+			h3
 				font-size: 24px
 				margin-top: 20px
 			textarea

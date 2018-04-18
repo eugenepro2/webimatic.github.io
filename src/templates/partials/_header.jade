@@ -1,5 +1,9 @@
 //BEGIN header
 header.header
+  .header__lang
+    img(src="img/flags/ru.png", alt="")
+    p Ru
+    i.icon.icon-lang
   .header__top
     .container
       .row.middle-xs
@@ -10,7 +14,7 @@ header.header
           nav
             ul
               li
-                a(href="index.html") Главная
+                a.active(href="index.html") Главная
               li
                 a(href="#portfolio") Проекты
               li
@@ -31,10 +35,6 @@ header.header
           //-     i.icon.icon-telegram
           //-   a(href="#")
           //-     i.icon.icon-facebook
-          .header__lang
-            img(src="img/flags/ru.png", alt="")
-            p Ru
-            i.icon.icon-lang
   .header__bottom
     .container
       .row.middle-xs

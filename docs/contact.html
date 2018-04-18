@@ -16,6 +16,8 @@
     <div class="out">
       <!--BEGIN header-->
       <header class="header">
+        <div class="header__lang"><img src="img/flags/ru.png" alt="">
+          <p>Ru</p><i class="icon icon-lang"></i></div>
         <div class="header__top">
           <div class="container">
             <div class="row middle-xs">
@@ -23,7 +25,7 @@
                 <div class="open-menu"><i class="icon icon-open"></i><span>Меню</span></div>
                 <nav>
                   <ul>
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html" class="active">Главная</a></li>
                     <li><a href="#portfolio">Проекты</a></li>
                     <li><a href="#look">Кого мы ищем?</a></li>
                     <li><a href="#capabilities">Возможности</a></li>
@@ -33,10 +35,7 @@
                   </ul>
                 </nav>
               </div>
-              <div class="col-md-3 col-sm-3 col-xs-6">
-                <div class="header__lang"><img src="img/flags/ru.png" alt="">
-                  <p>Ru</p><i class="icon icon-lang"></i></div>
-              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6"></div>
             </div>
           </div>
         </div>
@@ -101,7 +100,7 @@
       <div class="footer__bottom">
         <div class="container">
           <div class="row middle-xs center-xs start-sm">
-            <div class="col-md-4"><a href="#" class="logo"><img src="img/logo/white.svg" alt=""><div class="logo__text"><h2>Webimatic Invest</h2><p>Фонд правильных инвестиций</p></div></a></div>
+            <div class="col-md-4"><a href="#" class="logo"><img src="img/logo/white.svg" alt=""></a></div>
             <div class="col-md-4 col-xs-10">
               <p>©️ Webimatic Invest | Все права защищены 2017-2018 г.</p><a href="#" class="politika">Политика конфиденциальности</a></div>
             <div class="col-md-4">
@@ -113,12 +112,10 @@
     </footer><a href="#" class="top"><img src="img/top.svg" alt=""></a>
     <div id="form" style="display: none" class="modal">
       <form>
-        <h2>Оставьте заявку</h2>
+        <h3>Оставьте заявку</h3>
         <p>Наш специалист свяжется с Вами в ближайшее время!</p>
-        <div class="flex">
-          <div class="user input"><input type="text" required placeholder="Ваше имя"></div>
-          <div class="email input"><input type="email" required placeholder="Email адрес"></div>
-        </div>
+        <div class="user input"><input type="text" required placeholder="Ваше имя"></div>
+        <div class="email input"><input type="email" required placeholder="Email адрес"></div>
         <div class="textarea input"><textarea placeholder="Опишите ваш проект"></textarea></div>
         <div class="file"><i class="icon icon-file"></i>
           <p>Прекрепить резюме</p><input type="file"></div><input type="submit" value="Отправить заявку" class="btn btn-primary">
