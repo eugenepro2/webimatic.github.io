@@ -65,6 +65,8 @@
     +r($tablet)
       margin-top: 0
       width: 100%
+    +r($mobile)
+      padding: 25px 30px
     h3
       color: $secondary
       margin-bottom: 10px
@@ -76,5 +78,6 @@
     p
       color: $body-text
       font-size: 18px
-    .btn
-      font-size: 18px
+      +r($mobile)
+        font-size: 16px
+

@@ -52,6 +52,8 @@
           +center
       &__content
         padding-top: 40px
+        +r($mobile)
+          padding-top: 0
         &__col
           border-bottom: dashed 1px rgba($white, 0.15)
           padding-top: 30px
@@ -65,7 +67,7 @@
             border-bottom: none
           +r($mobile)
             height: 100% !important
-            padding: 15px 0 
+            padding: 15px 0 !important
       &--first
         +r($tablet)
           width: 100%
@@ -132,6 +134,9 @@
               top: 4px
       &--third
         box-shadow: none
+        .look__table__block__content__col
+          +r($mobile)
+            padding-bottom: 40px !important
         header
           box-shadow: none
         ul li
@@ -209,3 +214,17 @@
     +r($mobile)
       width: 300px
       margin-top: 20px
+  .swiper
+    &-pagination
+      +center
+      bottom: 22px
+      &-bullet
+        width: 8px
+        height: 8px
+        background: $white
+        opacity: 0.2
+        &-active
+          opacity: 1
+          background: $primary
+          width: 12px
+          height: 12px

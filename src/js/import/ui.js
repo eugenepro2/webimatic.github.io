@@ -33,3 +33,8 @@ if(device.mobile()) {
 } else if(device.desktop()) {
   $('#viewport').attr('content', 'width=1200, minimum-scale=0.3, maximum-scale=3, user-scalable=yes, target-densitydpi=device-dpi');
 }
+
+//Lang
+$('.header__lang').on('click', function() {
+  $('.header__lang__list').toggleClass('is-open');
+});
