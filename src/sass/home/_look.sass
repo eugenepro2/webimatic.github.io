@@ -34,7 +34,7 @@
     &__block
       width: 33.3333333%
       box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.12)
-      +r($mobile)
+      +r($tablet)
         box-shadow: none
       header
         background-color: $secondary
@@ -46,9 +46,10 @@
         padding-left: 25px
         padding-top: 28px
         box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.12)
+        +r($tablet)
+          box-shadow: none
         +r($mobile)
           padding: 0
-          box-shadow: none
           +center
       &__content
         padding-top: 40px
