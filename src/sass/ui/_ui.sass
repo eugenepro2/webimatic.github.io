@@ -9,7 +9,7 @@ html
 +r($mobile)
 	.hidden-xs
 		display: none !important
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px)
+@media only screen and (min-width: 768px) and (max-width: 1023px)
 	.hidden-sm
 		display: none !important
 +rmin($tablet)
@@ -275,9 +275,13 @@ form
 	height: 50px
 	bottom: 50px
 	right: 50px
+	z-index: 100
 	display: none
 	img
 		width: 100%
+	+r($mobile)
+		right: 10px
+		
 
 //Footer прижат к низу
 html, body
