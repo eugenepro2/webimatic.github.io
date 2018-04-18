@@ -267,8 +267,9 @@ form
 			font-weight: 900
 			text-transform: uppercase
 			margin-bottom: 8px
-		p
-			font-size: 18px
+			& +	p
+				font-size: 18px
+				margin-bottom: 25px
 		+r($mobile)
 			.flex
 				flex-direction: column
