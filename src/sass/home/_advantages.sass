@@ -14,14 +14,17 @@
     margin-bottom: 115px
     +r($tablet)
       font-size: 40px
+      justify-content: center
+      margin-bottom: 85px
     +r($mobile)
       font-size: 32px
       margin-bottom: 60px
     i 
       color: $primary
-      font-size: 
       font-size: 100px
       margin-right: 35px
+      +r($tablet)
+        display: none
       +r($mobile)
         font-size: 70px
         margin-right: 20px
@@ -35,7 +38,8 @@
     align-items: flex-end
     justify-content: center
     +r($tablet)
-      align-items: flex-start
+      padding: 0 15px
+      align-items: center
     +r($mobile)
       margin-bottom: 80px
       height: 140px
@@ -53,5 +57,4 @@
       font-family: 'Museo Sans'
       +r($tablet)
         font-size: 16px
-        margin-top: 75px
-        margin-bottom: 0
+        margin-top: 45px
