@@ -13,17 +13,16 @@ $icon-3: "\EA01";
 $icon-clock: "\EA02";
 $icon-close-menu: "\EA03";
 $icon-close: "\EA04";
-$icon-facebook: "\EA05";
+$icon-fb: "\EA05";
 $icon-file: "\EA06";
 $icon-form-textarea: "\EA07";
 $icon-form-user: "\EA08";
 $icon-lang: "\EA09";
-$icon-link: "\EA0A";
-$icon-mail: "\EA0B";
-$icon-next: "\EA0C";
-$icon-open: "\EA0D";
-$icon-prev: "\EA0E";
-$icon-telegram: "\EA0F";
+$icon-mail: "\EA0A";
+$icon-next: "\EA0B";
+$icon-open: "\EA0C";
+$icon-prev: "\EA0D";
+$icon-telegram: "\EA0E";
 
 
 %icon {
@@ -46,12 +45,11 @@ $icon-telegram: "\EA0F";
 .icon-clock:before { content: $icon-clock; }
 .icon-close-menu:before { content: $icon-close-menu; }
 .icon-close:before { content: $icon-close; }
-.icon-facebook:before { content: $icon-facebook; }
+.icon-fb:before { content: $icon-fb; }
 .icon-file:before { content: $icon-file; }
 .icon-form-textarea:before { content: $icon-form-textarea; }
 .icon-form-user:before { content: $icon-form-user; }
 .icon-lang:before { content: $icon-lang; }
-.icon-link:before { content: $icon-link; }
 .icon-mail:before { content: $icon-mail; }
 .icon-next:before { content: $icon-next; }
 .icon-open:before { content: $icon-open; }

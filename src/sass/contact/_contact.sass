@@ -1,7 +1,6 @@
 .contact
   padding-top: 50px
   padding-bottom: 100px
-  background: $gray-02
   +r($tablet)
     padding-bottom: 60px
     padding-top: 30px
@@ -13,19 +12,29 @@
       margin-bottom: 20px
     +r($mobile)
       font-size: 32px
+      margin-bottom: 24px
   .form__social
     margin-bottom: 40px
     +r($tablet)
       justify-content: flex-start
       display: block
+    +r($mobile)
+      margin-bottom: 25px
     a
       color: $secondary
       text-decoration: none
       &:hover
         span
           text-decoration: underline
+      +r($mobile)
+        margin-bottom: 16px
     i
       text-decoration: none
+      +r($mobile)
+        width: 48px
+        height: 48px
+        font-size: 15px
+        margin-right: 8px
     span
       +r($tablet)
         display: block

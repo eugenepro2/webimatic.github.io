@@ -3,8 +3,9 @@
 	width: 100%
 	z-index: 10
 	&.fixed
-		position: fixed
+		position: fixed !important
 		z-index: 100
+		background: none !important
 		.header
 			&__top
 				background: rgba($secondary, 0.9)
@@ -13,17 +14,14 @@
 	.logo__black
 		display: none
 	.social
-		display: none
-		+rmin(1400)
-			display: flex
-		@media only screen and (min-width: 768px) and (max-width: 1023px)
-			display: flex
 		+r($mobile)
 			display: flex
 	&__top
 		background: $secondary
 		height: 60px
 		margin-bottom: 15px
+		+r($mobile)
+			height: 48px
 	&__lang
 		float: right
 		display: flex
@@ -36,8 +34,11 @@
 		cursor: pointer
 		position: absolute
 		+tr
+		+r(1400)
+			position: relative
 		+r($mobile)
 			right: 0
+			height: 48px
 		&:hover
 			background: rgba($secondary, 0.9)
 		&__list
@@ -46,11 +47,7 @@
 			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08)
 			right: 0
 			top: 60px
-			opacity: 0
-			+tr
-			&.is-open
-				opacity: 1
-
+			display: none
 			li
 				&:nth-of-type(1)
 					a
@@ -92,7 +89,7 @@
 			font-size: 7px
 	nav
 		height: 60px
-		+r($tablet)
+		+r(1400)
 			display: none
 		ul
 			height: 100%

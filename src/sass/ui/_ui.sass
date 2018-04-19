@@ -42,7 +42,15 @@ body
 	align-items: center
 	img
 		width: 300px
-		
+
++r($mobile)
+	.bodynews
+		.social
+			a
+				background-color: rgba(0, 0, 0, 0.04)
+			i
+				color: $primary
+
 .social
 	float: right
 	display: flex !important
@@ -241,6 +249,7 @@ form
 				font-size: 12px
 			a
 				color: rgba(22, 28, 40, 0.7)
+				text-decoration: underline
 
 
 
@@ -329,4 +338,11 @@ html, body
   flex: 0 0 auto
 
 +r(1024)
-	
+
+
+
+.icon-link
+	background: url('../img/link.svg')
+	width: 32px
+	height: 32px
+	+cover

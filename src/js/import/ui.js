@@ -14,14 +14,15 @@ $('a[rel]').click(function(event) {
  
 //Плавный скролл
 $('nav, #menu').on('click','a', function(event) {
-  var id = $(this).attr('href');
+  let id = $(this).attr('href');
 
   if (id.indexOf('html') + 1) {
-  } else{
+  } else if(id.indexOf('#') + 1) {
+    let url = location.hostname;
     event.preventDefault();
   }
   
-  var top = $(id).offset().top;
+  let top = $(id).offset().top;
   $('body,html').animate({scrollTop: top-60}, 1500);
 });
 
@@ -36,5 +37,11 @@ if(device.mobile()) {
 
 //Lang
 $('.header__lang').on('click', function() {
-  $('.header__lang__list').toggleClass('is-open');
+  $('.header__lang__list').fadeToggle();
 });
+
+$('.panel').on('click', function() {
+  $('.header__lang__list').fadeOut();
+});
+
+
