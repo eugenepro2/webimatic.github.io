@@ -1,6 +1,13 @@
 import jqueryModal from 'jquery-modal';
 import device from 'current-device';
 
+if (window.location.hash) {
+  $('html, body').animate({
+    scrollTop: $(window.location.hash).offset().top
+  }, 1000);
+}
+
+
 //Модальные онка
 $('a[rel]').click(function(event) {
   $(this).modal({
@@ -16,14 +23,16 @@ $('a[rel]').click(function(event) {
 $('nav, #menu').on('click','a', function(event) {
   let id = $(this).attr('href');
 
-  if (id.indexOf('html') + 1) {
-  } else if(id.indexOf('#') + 1) {
+  if (id.indexOf('#')) {
+  } else if(id.indexOf('#') + 1 && !$('#menu-item-28').hasClass('active')) {
     let url = location.hostname;
+    location.href = 'http://' + url + id;
+  } else{
     event.preventDefault();
+    let top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top-60}, 1500);
   }
   
-  let top = $(id).offset().top;
-  $('body,html').animate({scrollTop: top-60}, 1500);
 });
 
 //Viewport

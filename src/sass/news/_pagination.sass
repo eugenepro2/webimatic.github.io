@@ -6,7 +6,7 @@
     margin-bottom: 40px
     margin-top: 10px
     justify-content: center
-  a.link
+  .page-numbers
     font-weight: 500
     font-size: 16px
     color: $secondary
@@ -18,14 +18,18 @@
     margin: 0 4px
     border-radius: 50%
     +tr
-    &.active
+    &.current
       border: 1px solid $primary
     &:hover
       background: $primary
       color: $white
   span
     height: 30px
-    margin-bottom: 0
+    font-weight: 500
+    font-size: 16px
+    color: $secondary
+    font-family: 'Museo Sans'
+    margin: 0 4px
   .prev, .next
     font-weight: 500
     color: $secondary
@@ -34,6 +38,11 @@
     cursor: pointer
     display: inline-block
     text-decoration: none
+    width: inherit
+    height: inherit
+    font-family: 'Roboto'
+    &:hover
+      background: none
     i
       margin: 0 7px
       font-size: 10px

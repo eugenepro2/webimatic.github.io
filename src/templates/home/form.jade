@@ -16,21 +16,26 @@ section.form
             span facebook.com/webimaticinvest
       .col-md-6.col-xs-12
         form
-          h3 Оставьте заявку
-          p Наш специалист свяжется с Вами <br>в ближайшее время!
-          .user.input
-            input(type="text" required placeholder="Ваше имя")
-          .email.input
-            input(type="email" required placeholder="Email адрес")
-          .textarea.input
-            textarea(placeholder="Опишите ваш проект")
-          .file
-            i.icon.icon-file
-            p Прекрепить резюме
-            input(type="file")
-          input.btn.btn-primary(type="submit" value="Отправить заявку")
-          .checkbox
-            input#checkbox(type="checkbox" required)
-            label.label(for="checkbox")
-            label.label-for(for="checkbox") Я принимаю 
-              a(href="#") условия пользовательского соглашения
+          .form__block
+            h3 Оставьте заявку
+            p Наш специалист свяжется с Вами <br>в ближайшее время!
+            .user.input
+              input(type="text" required placeholder="Ваше имя")
+            .email.input
+              input(type="email" required placeholder="Email адрес")
+            .textarea.input
+              textarea(placeholder="Опишите ваш проект")
+            .file
+              i.icon.icon-file
+              p Прекрепить резюме
+              input(type="file")
+            input.btn.btn-primary(type="submit" value="Отправить заявку")
+            .checkbox
+              input#checkbox(type="checkbox")
+              label.label(for="checkbox")
+              label.label-for(for="checkbox") Я принимаю 
+                a(href="#") условия пользовательского соглашения
+          .form__thank
+            img(src="img/thanks.svg", alt="")
+            h3 Спасибо за заявку!
+            p Ваша заявка успешно отправлена. В ближайшее время наш специалист свяжется с Вами.

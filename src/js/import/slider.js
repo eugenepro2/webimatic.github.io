@@ -35,3 +35,23 @@ let lookSlider = new Swiper('.look-slider', {
   },
   autoHeight: true,
 });
+
+
+let portfolioSlider = new Swiper('.portfolio-slider', {
+  speed: 400,
+  slidesPerView: 2,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 1,
+    },
+  }
+});

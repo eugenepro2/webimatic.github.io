@@ -26,20 +26,6 @@
     i
       font-size: 18px
       margin-right: 10px
-  .back
-    margin: 20px 0
-    display: flex
-    text-decoration: none
-    font-size: 14px
-    font-family: "Museo Sans"
-    color: rgba($secondary, 0.6)
-    align-items: center
-    i
-      margin-right: 5px
-      font-size: 12px
-      position: relative
-      top: -1px
-      color: $secondary
   &__content
     &__big
       width: 100%
@@ -70,6 +56,7 @@
       background-color: $white
       box-shadow: 0 0 24px 0 rgba(37, 40, 74, 0.04)
       margin-bottom: 30px
+      text-decoration: none
       +r($mobile)
         margin-bottom: 15px
       header
@@ -93,7 +80,7 @@
           font-size: 20px
           line-height: 1.4
           font-weight: 600
-      a
+      footer
         display: flex
         align-items: center
         height: 60px
@@ -105,11 +92,13 @@
         text-decoration: none
         color: $secondary
         font-weight: 600
+        span
+          margin-bottom: 0
         i
           color: $primary
           font-size: 32px
           margin-right: 10px
           +tr
-        &:hover i
-          transform: scale(1.1)
+      &:hover footer i
+        transform: scale(1.1)
 
